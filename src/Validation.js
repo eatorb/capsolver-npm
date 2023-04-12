@@ -24,11 +24,11 @@ class Validation {
             ];
 
         this.parameters.MtCaptchaTask = [
-                { name:'websiteURL', required: true, type: 'string' }, { name:'websiteKey', required: true, type: 'string' },
-                { name:'proxyType', required: false, type: 'string' }, { name:'proxyAddress', required: false, type: 'string' },
-                { name:'proxyPort', required: false, type: 'number' }, { name:'proxyLogin', required: false, type: 'string' },
-                { name:'proxy', required: false, type: 'string' }, { name:'proxyPassword', required: false, type: 'string' }
-            ];
+            { name:'websiteURL', required: true, type: 'string' }, { name:'websiteKey', required: true, type: 'string' },
+            { name:'proxyType', required: false, type: 'string' }, { name:'proxyAddress', required: false, type: 'string' },
+            { name:'proxyPort', required: false, type: 'number' }, { name:'proxyLogin', required: false, type: 'string' },
+            { name:'proxy', required: false, type: 'string' }, { name:'proxyPassword', required: false, type: 'string' }
+        ];
 
         this.parameters.MtCaptchaTaskProxyLess = [
             { name:'websiteURL', required: true, type: 'string' }, { name:'websiteKey', required: true, type: 'string' }
