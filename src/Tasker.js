@@ -43,7 +43,7 @@ class Tasker {
                 if(self.verbose === 2){ console.log(error.response.data) }
                 return { 'error':-1, 'statusText':error.response.status, 'apiResponse':error.response.data }
             })
-        if(this.verbose === 1){ if(handled.error === 0){ console.log(`[${this.taskData.type}][created task][${handled['apiResponse']['taskId']}]`) } else { console.log(`[${this.taskData.type}][failed][${handled['apiResponse']}]`) } }
+        if(this.verbose === 1){ if(handled.error === 0){ console.log(`capsolver-npm: ${this.taskData.type}: [created task][${handled['apiResponse']['taskId']}]`) } else { console.log(`capsolver-npm: ${this.taskData.type}: [failed][${handled['apiResponse']}]`) } }
         if(this.verbose === 2){ console.log(handled['apiResponse']) }
         return handled
     }
@@ -75,7 +75,7 @@ class Tasker {
                     fails++
                     return { 'error':-1, 'statusText':error.response.status, 'apiResponse':error.response.data }
                 })
-            if(this.verbose === 1){ console.log(`[${taskId}][status: ${status}]`) }
+            if(this.verbose === 1){ console.log(`capsolver-npm: [${taskId}][status: ${status}]`) }
             if(this.verbose === 2){ console.log(handled['apiResponse']) }
             if(handled.error !== 0) break
         }

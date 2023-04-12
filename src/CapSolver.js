@@ -8,7 +8,7 @@ class CapSolver {
     constructor(apikey, verbose=0, rqdelay=1700) { this.apikey = apikey; this.verbose = verbose; this.rqdelay = rqdelay; this.init() }
 
     /** * Set-up handler **/
-    init(){ if(this.verbose === 2){ console.log(`[${this.constructor.name}][Verbose level ${this.verbose} running at: ${this.apikey}]`) } }
+    init(){ if(this.verbose === 2){ console.log(`capsolve-npm: Verbose level ${this.verbose} running at: ${this.apikey}`) } }
 
     /** * Return USD balance as float number **/
     async balance(){ let handled = await this.getBalance(); return handled['apiResponse']['balance'] ? parseFloat(handled['apiResponse']['balance']): handled }
@@ -29,7 +29,7 @@ class CapSolver {
                 if(self.verbose === 2){ console.log(error) }
                 return { 'error':-1, 'statusText':error.response.status, 'apiResponse':error.response.data }
             })
-        if(this.verbose !== 0) { console.log(`[${this.constructor.name}][getBalance][${handled['statusText']}][${parseFloat(handled['apiResponse']['balance'])} USD]`) }
+        if(this.verbose !== 0) { console.log(`capsolver-npm: Balance ${parseFloat(handled['apiResponse']['balance'])} USD]`) }
         return handled
     }
 
