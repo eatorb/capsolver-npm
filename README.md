@@ -7,7 +7,7 @@
 *🔥 [HCaptchaTurboTask (highest pass/valid rate).](https://github.com/0qwertyy/capsolver-npm/blob/master/examples/hcaptcha_turbo.js)
 🔥 AntiCloudflare.*
 
-[![](https://img.shields.io/badge/1.0.7-capsolver--npm-darkgreen?logo=npm&logoColor=white)](https://www.npmjs.com/package/capsolver-npm)
+[![](https://img.shields.io/badge/1.0.8-capsolver--npm-darkgreen?logo=npm&logoColor=white)](https://www.npmjs.com/package/capsolver-npm)
 [![](https://img.shields.io/badge/documentation-docs.capsolver.com-darkgreen)](https://docs.capsolver.com/guide/getting-started.html)
 
 ⬇️ Install
