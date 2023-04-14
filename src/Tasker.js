@@ -106,7 +106,8 @@ class Tasker {
                 }
             })
         }else{
-            throw Error(`${taskData.type} is not a valid captcha task type.`)
+            // allow custom task types
+            if(this.verbose !== 0){ console.log(`capsolver-npm: [Using a custom TaskType: ${taskData.type}]`) }
         }
         return true
     }
