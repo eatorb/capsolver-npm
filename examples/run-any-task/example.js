@@ -1,9 +1,9 @@
 const CapSolver = require('../../src/CapSolver');
-const handler = new CapSolver('CAI-XXX ...');
+const handler = new CapSolver('CAI-A51F1A6D95B60C79C6599D757C09A694', 1);
 
 (async function () {
     await handler.runAnyTask({
-            type : "HCaptchaTaskProxyLess",
+            type : "HCaptchaTurboTaskProxyLess",
             websiteURL : "https://discord.com/",
             websiteKey : "4c672d35-0701-42b2-88c3-78380b0db560",
             // proxyInfo: {
